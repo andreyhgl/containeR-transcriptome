@@ -3,7 +3,7 @@
 
 # README
 
-Singularity image with pre-installed libraries for running bulk RNA-seq analysis in [`R`](https://www.r-project.org/).
+Singularity image with pre-installed libraries for running RNA-seq analysis in [`R`](https://www.r-project.org/).
 
 The included libraries:
 
@@ -46,7 +46,7 @@ The included libraries:
 Use the definition file to build locally:
 
 ```sh
-apptainer build bulk-RNAseq.sif bulk-RNAseq.def
+apptainer build RNAseq.sif RNAseq.def
 ```
 
 ## Deploy
@@ -54,7 +54,7 @@ apptainer build bulk-RNAseq.sif bulk-RNAseq.def
 Pre-build image can be downloaded from the [Cloud Library](https://cloud.sylabs.io/library):
 
 ```sh
-apptainer pull library://flerpan01/singularity-r/bulk-rnaseq:latest
+apptainer pull library://andreyhgl/singularity-r/rnaseq:latest
 ```
 
 >Note, with apptainer the [remote singularity host](https://apptainer.org/docs/user/latest/endpoint.html#restoring-pre-apptainer-library-behavior) might need to be added manually
@@ -92,5 +92,5 @@ chmod +x script-file.R
 The singularity image expects a script file on `exec`.
 
 ```sh
-apptainer exec library://flerpan01/singularity-r/bulk-rnaseq:latest script-file.R
+apptainer exec library://andreyhgl/singularity-r/rnaseq:latest script-file.R
 ```

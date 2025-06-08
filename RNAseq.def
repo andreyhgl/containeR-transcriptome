@@ -2,7 +2,7 @@ Bootstrap: docker
 From: bioconductor/bioconductor_docker:devel
 
 %labels
-	Author https://github.com/flerpan01
+	Author https://github.com/andreyhgl
 
 %environment
 	export LC_ALL=C
