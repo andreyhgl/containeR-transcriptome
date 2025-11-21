@@ -11,11 +11,13 @@ The included libraries:
 
 + ggplot2
 + ggrepel
++ ggvenn
 + ggsignif
 + cowplot
 + RColorBrewer
 + patchwork
 + ComplexHeatmap
++ [gt](https://gt.rstudio.com/reference/index.html)
 
 #### Differential gene expression analysis
 
@@ -40,6 +42,7 @@ The included libraries:
 + forcats
 + openxlsx
 + readr
++ dplyr
 
 ## Build
 
@@ -57,15 +60,16 @@ Pre-build image can be downloaded from the [Cloud Library](https://cloud.sylabs.
 apptainer pull library://andreyhgl/singularity-r/rnaseq:latest
 ```
 
->Note, with apptainer the [remote singularity host](https://apptainer.org/docs/user/latest/endpoint.html#restoring-pre-apptainer-library-behavior) might need to be added manually
+> [!TIP]
+> If apptainer/singularity is not working, try [adding the remote host manually](https://apptainer.org/docs/user/latest/endpoint.html#restoring-pre-apptainer-library-behavior)
 >
->```sh
-># list the remote URI
->singuliarty remote list
+> ```sh
+> # list the remote URI
+> singuliarty remote list
 >
-># add singularity cloud URI
->apptainer remote add --no-login SylabsCloud cloud.sycloud.io
->```
+> # add singularity cloud URI
+> apptainer remote add --no-login SylabsCloud cloud.sycloud.io
+> ```
 
 ## Execute scripts
 

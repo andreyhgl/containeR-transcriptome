@@ -24,6 +24,7 @@ tools
 scales
 data.table
 ggrepel
+ggvenn
 forcats
 RColorBrewer
 cowplot
@@ -31,6 +32,8 @@ ggsignif
 openxlsx
 patchwork
 readr
+gt
+dplyr
 EOF
 
 R -e "install.packages(readLines('pkgs-CRAN.txt'))"
