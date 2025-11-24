@@ -33,6 +33,7 @@ openxlsx
 patchwork
 readr
 gt
+DT
 dplyr
 EOF
 
