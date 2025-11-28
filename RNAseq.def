@@ -8,8 +8,12 @@ From: bioconductor/bioconductor_docker:devel
 	export LC_ALL=C
 
 %post
-  # Install less
-  apt-get update && apt-get install -y less
+  apt-get update
+
+  # Install less and qpdf
+  apt-get install -y less
+  apt-get install -y qpdf
+
   # Clean up apt cache to reduce image size
   apt-get clean
   rm -rf /var/lib/apt/lists/*

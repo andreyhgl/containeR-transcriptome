@@ -43,6 +43,7 @@ The included libraries:
 + openxlsx
 + readr
 + dplyr
++ reshape2 (included with other packages)
 
 ## Build
 
@@ -51,6 +52,18 @@ Use the definition file to build locally:
 ```sh
 apptainer build RNAseq.sif RNAseq.def
 ```
+
+> [!TIP]
+> Use a non-interactive install by adding `-y`
+>
+> ```sh
+> %post
+>   apt-get update
+>
+>   # Install less and qpdf
+>   apt-get install -y less
+>   apt-get install -y qpdf
+> ```
 
 ## Deploy
 
